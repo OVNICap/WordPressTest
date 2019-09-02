@@ -1,0 +1,9 @@
+.site-header {
+  background-color: var(--lighterGray);
+  font-size: 2em;
+}
+
+.site-header img {
+  width: 2em;
+  height: 2em;
+}

@@ -1,0 +1,30 @@
+image:
+  file: .gitpod.dockerfile
+ports:
+  - port: 8080
+    onOpen: open-preview
+tasks:
+  - name: Theme
+    command: >
+      cd www/wp-content/themes/vuejs &&
+      npm install &&
+      npm run watch
+  - init: service mysql start
+    name: MySQL
+    command: >
+      echo "CREATE DATABASE wordpress;" | mysql &&
+      echo "CREATE USER 'wordpress'@'localhost' IDENTIFIED BY 'wordpress';" | mysql &&
+      echo "GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress'@'localhost';" | mysql &&
+      mysql
+  - name: Terminal
+    command: >
+      echo "";
+      echo "Commands you can try:";
+      echo " * apachectl stop";
+      echo " * apachectl start";
+      echo " * gp open /var/log/apache2/access.log";
+      echo " * gp open /var/log/apache2/error.log";
+  - name: Apache
+    command: >
+      apachectl start &&
+      multitail /var/log/apache2/access.log -I /var/log/apache2/error.log
