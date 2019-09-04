@@ -94,8 +94,8 @@ Your API should return the following JSON:
 ```
 
 The property "id" reminds the id passed in the URL and "count" is the number
-of words in the post. The letter à, é, è and ê should be considered are also
-word letters (other non-english letters can be ignored in this version).
+of words in the post. The letters à, é, è and ê should be considered as
+word letters too (other non-english letters can be ignored in this exercise).
 
 For conveniance, we won't code this in a plug-in, but in **words-length.php**
 which will be included by **functions.php**.

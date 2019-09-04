@@ -11,6 +11,7 @@ wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 
-/.htaccess
+# Disabled for the test
+#/.htaccess
 /sitemap.xml
 /sitemap.xml.gz
