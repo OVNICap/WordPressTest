@@ -56,6 +56,9 @@ Enter "wordpress", "wordpress" and "wordpress" as DB name, DB user and DB passwo
 
 Then proceed. Enter what you wish on the next step and finish the install.
 
+Go to the "Permaliens" settings and choose "Nom de l'article" to enable the
+rewrite rules engine required for the JSON API.
+
 ### Develop
 
 Run the watch command so the theme will be automatically refreshed as you code (automatic on GitPod):
