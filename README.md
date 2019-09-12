@@ -72,12 +72,17 @@ The files you will have to check and edit are all in the folder:
 
 #### Challenge 1: CSS
 
-Make the header looking like this:
+Make the header logo and title look like this:
 ![Expected header](https://github.com/OVNICap/WordPressTest/raw/master/www/wp-content/themes/vuejs/src/assets/expected-header.jpg)
 
+Make the header menu look like this:
+![Expected header](https://github.com/OVNICap/WordPressTest/raw/master/www/wp-content/themes/vuejs/src/assets/expected-menu.jpg)
+
 - We want `1em` margin top, bottom and between image and text.
-- We expect items to be centered verticaly and horizontally.
+- We expect items to be centered vertically and horizontally.
 - We want the logo to be a rounded instead of squared.
+- We want the menu to be invisible until the cursor is over the burger icon.
+- We want to be the menu on the right side and the button in the middle vertically.
 - You must only edit **site-header.css**, changing the HTML is not needed.
 - Consider the whole criteria should remain true if size of text or image change a bit in the future.
 
@@ -100,7 +105,7 @@ The property "id" reminds the id passed in the URL and "count" is the number
 of words in the post. The letters à, é, è and ê should be considered as
 word letters too (other non-english letters can be ignored in this exercise).
 
-For conveniance, we won't code this in a plug-in, but in **words-length.php**
+For convenience, we won't code this in a plug-in, but in **words-length.php**
 which will be included by **functions.php**.
 
 Send us **words-length.php** as challenge solution.
@@ -114,6 +119,6 @@ If the date is today, display "Aujourd'hui à " then hours and minutes.
 
 Else, display the date as day/month/year.
 
-Bonus: take care of displaying the correct output in any timezone.
+Take care of displaying the correct output in any timezone.
 
 Send us **RecentPosts.vue** as challenge solution.
