@@ -73,9 +73,11 @@ The files you will have to check and edit are all in the folder:
 #### Challenge 1: CSS
 
 Make the header logo and title look like this:
+
 ![Expected header](https://github.com/OVNICap/WordPressTest/raw/master/www/wp-content/themes/vuejs/src/assets/expected-header.jpg)
 
 Make the header menu look like this:
+
 ![Expected header](https://github.com/OVNICap/WordPressTest/raw/master/www/wp-content/themes/vuejs/src/assets/expected-menu.jpg)
 
 - We want `1em` margin top, bottom and between image and text.
